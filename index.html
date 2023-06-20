@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Collage Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .collage-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .photo {
+            position: relative;
+            flex: 1 0 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .photo h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .photo .btn {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="collage-container">
+        <div class="photo photo1" style="background-image: url('https://www.allrecipes.com/thmb/dpoUP9FEpQNDvfo9rSaYABk0JQA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/1579413-2ba2779616fa41c2a55840fff70f80bc.jpg');">
+            <h1>Banana Cake Cream Frost</h1>
+            <a href="./recipes/Banana%20Cake%20Cream%20Frost1.html" class="btn">Try Now</a>
+        </div>
+        <div class="photo photo2" style="background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets-ucg.meredithcorp.io%2F23c2bf7a9c2f72d6d2521d1177d30816%2F963564.jpg&q=60&c=sc&orient=true&poi=auto&h=512');">
+            <h1>Choclate Banana Cake</h1>
+            <a href="./recipes/Choclate%20Banana%20Cake2.html" class="btn">Try Now</a>
+        </div>
+        <div class="photo photo3" style="background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2825960.jpg&q=60&c=sc&orient=true&poi=auto&h=512');">
+            <h1>Banana Bread</h1>
+            <a href="./recipes/Banana%20Bread%203.html" class="btn">Try Now</a>
+        </div>
+        <div class="photo photo4" style="background-image: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets-ucg.meredithcorp.io%2F520dd46450de7988e2341056630017e9%2F3711428.jpg&q=60&c=sc&orient=true&poi=auto&h=512');">
+            <h1>Banana Upside Down Cake</h1>
+            <a href="./recipes/Banana%20Upside%20Down%20Cake4.html" class="btn">Try Now</a>
+        </div>
+    </div>
+</body>
+</html>
